@@ -1,0 +1,11 @@
+version: '2.1'
+services:
+
+  mysql:
+    image: mysql:5.7.19
+    command: mysqld --user=root
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpw
+      - MYSQL_DATABASE=test
+    ports:
+      - 3306:3306
